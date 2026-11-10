@@ -1,0 +1,14 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/report_parameters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:orientation="vertical"
+        android:background="@drawable/card"
+        android:padding="16dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Report parameters" android:textColor="#173929" android:textSize="20sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/trend_charts" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+</merge>

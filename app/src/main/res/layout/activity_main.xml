@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="#F4F6F0">
+<LinearLayout android:layout_width="match_parent" android:layout_height="60dp" android:gravity="center_vertical" android:paddingHorizontal="16dp">
+<ImageView android:layout_width="34dp" android:layout_height="34dp" android:padding="6dp" android:layout_marginEnd="9dp" android:src="@drawable/ic_pens" android:background="@drawable/brand_mark" android:importantForAccessibility="no"/>
+<TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="HogWatch" android:textStyle="bold" android:textSize="24sp" android:textColor="#163E33" android:letterSpacing="-.04"/>
+<ImageButton android:id="@+id/add" android:layout_width="48dp" android:layout_height="48dp" android:background="?android:attr/selectableItemBackgroundBorderless" android:src="@drawable/ic_add" android:tint="#163E33" android:layout_marginEnd="8dp" android:contentDescription="Add to farm"/>
+<TextView android:id="@+id/account" android:layout_width="44dp" android:layout_height="44dp" android:gravity="center" android:background="@drawable/avatar" android:textColor="#FFFFFF" android:focusable="true" android:contentDescription="Open profile menu"/></LinearLayout>
+<ScrollView android:id="@+id/scroll" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true" android:background="#F4F6F0"><LinearLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16dp" android:paddingTop="3dp" android:paddingBottom="14dp" android:orientation="vertical"/></ScrollView>
+<LinearLayout android:id="@+id/navigation" android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp" android:layout_marginTop="3dp" android:layout_marginBottom="6dp" android:minHeight="68dp" android:gravity="center_vertical" android:baselineAligned="false" android:paddingVertical="4dp" android:orientation="horizontal"
+    android:elevation="2dp" android:clipToOutline="true" android:background="@drawable/nav_dock"/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"
+        android:orientation="vertical" android:background="@drawable/card" android:padding="1dp" android:clipToOutline="true">
+        <LinearLayout android:id="@+id/farm_counts" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:baselineAligned="false" android:divider="@drawable/grid_divider" android:showDividers="middle"/>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E1E9E2"/>
+        <LinearLayout android:id="@+id/farm_averages" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:baselineAligned="false" android:divider="@drawable/grid_divider" android:showDividers="middle"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/compare_pens" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="14dp" android:orientation="vertical" android:background="@drawable/card" android:padding="15dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Compare pens"
+            android:textColor="#173929" android:textSize="20sp" android:textStyle="bold" android:layout_marginBottom="10dp"/>
+        <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" android:scrollbars="none">
+            <LinearLayout android:id="@+id/reading_tabs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/chip" android:padding="3dp"/>
+        </HorizontalScrollView>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,15 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:padding="16dp" android:orientation="vertical" android:background="@drawable/card">
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Global alert settings" android:textSize="20sp" android:textColor="#294B37" android:textStyle="bold" android:layout_marginBottom="6dp"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Default alert delay (minutes)" android:textSize="13sp" android:textColor="#294B37" android:labelFor="@+id/alert_delay" android:layout_marginTop="12dp"/>
+<EditText android:id="@+id/alert_delay" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_marginTop="4dp" android:background="@drawable/card" android:padding="10dp" android:textSize="16sp" android:singleLine="true" android:inputType="number" android:hint=""/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Routine camera snapshot" android:textSize="13sp" android:textColor="#294B37" android:layout_marginTop="12dp" android:labelFor="@+id/alert_snapshot"/>
+<Spinner android:id="@+id/alert_snapshot" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp"/>
+<Button android:id="@+id/save_global" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:minHeight="48dp" android:background="@drawable/action_primary" android:stateListAnimator="@null" android:textAllCaps="false" android:textColor="#FFFFFF" android:text="Save global settings"/>
+</LinearLayout>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:padding="16dp" android:orientation="vertical" android:background="@drawable/card">
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Configured alert levels" android:textSize="20sp" android:textColor="#294B37" android:textStyle="bold" android:layout_marginBottom="6dp"/>
+<Button android:id="@+id/add_level" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:minHeight="48dp" android:background="@drawable/action_primary" android:stateListAnimator="@null" android:textAllCaps="false" android:textColor="#FFFFFF" android:text="+ Add alert level"/>
+<LinearLayout android:id="@+id/rule_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+</LinearLayout>
+</merge>

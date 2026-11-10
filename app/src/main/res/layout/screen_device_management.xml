@@ -1,0 +1,36 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@+id/equipment_sections" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:orientation="vertical"/>
+    <LinearLayout
+        android:id="@+id/gateway"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:orientation="vertical"
+        android:background="@drawable/card"
+        android:padding="16dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Main edge gateway" android:textColor="#173929" android:textSize="20sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:orientation="vertical"
+        android:background="@drawable/card"
+        android:padding="16dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Environmental controls" android:textColor="#173929" android:textSize="20sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:orientation="vertical"
+        android:background="@drawable/card"
+        android:padding="16dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Device register" android:textColor="#173929" android:textSize="20sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+</merge>

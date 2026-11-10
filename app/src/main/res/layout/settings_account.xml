@@ -1,0 +1,19 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:padding="16dp" android:orientation="vertical" android:background="@drawable/card">
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Account profile" android:textSize="20sp" android:textColor="#294B37" android:textStyle="bold" android:layout_marginBottom="6dp"/>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:layout_marginTop="8dp">
+<TextView android:id="@+id/profile_initials" android:layout_width="46dp" android:layout_height="46dp" android:background="@drawable/avatar" android:gravity="center" android:textColor="#FFFFFF" android:textStyle="bold"/>
+<LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:orientation="vertical">
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:textSize="16sp" android:textColor="#294B37" android:id="@+id/profile_name" android:textStyle="bold"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Farm Manager" android:textSize="13sp" android:textColor="#294B37" />
+</LinearLayout>
+</LinearLayout>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Full name" android:textSize="13sp" android:textColor="#294B37" android:labelFor="@+id/full_name" android:layout_marginTop="12dp"/>
+<EditText android:id="@+id/full_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_marginTop="4dp" android:background="@drawable/card" android:padding="10dp" android:textSize="16sp" android:singleLine="true" android:inputType="textCapWords" android:hint=""/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Email address" android:textSize="13sp" android:textColor="#294B37" android:labelFor="@+id/email_address" android:layout_marginTop="12dp"/>
+<EditText android:id="@+id/email_address" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_marginTop="4dp" android:background="@drawable/card" android:padding="10dp" android:textSize="16sp" android:singleLine="true" android:inputType="textEmailAddress" android:hint=""/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mobile number" android:textSize="13sp" android:textColor="#294B37" android:labelFor="@+id/mobile_number" android:layout_marginTop="12dp"/>
+<EditText android:id="@+id/mobile_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_marginTop="4dp" android:background="@drawable/card" android:padding="10dp" android:textSize="16sp" android:singleLine="true" android:inputType="phone" android:hint=""/>
+<Button android:id="@+id/save_profile" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:minHeight="48dp" android:background="@drawable/action_primary" android:stateListAnimator="@null" android:textAllCaps="false" android:textColor="#FFFFFF" android:text="Update profile"/>
+</LinearLayout>
+</merge>

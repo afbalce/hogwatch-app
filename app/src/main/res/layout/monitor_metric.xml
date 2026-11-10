@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:minHeight="76dp" android:paddingVertical="7dp">
+    <ImageView android:id="@+id/metric_symbol" android:layout_width="36dp" android:layout_height="36dp" android:padding="8dp" android:background="@drawable/monitor_icon_bg" android:importantForAccessibility="no"/>
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="10dp">
+        <TextView android:id="@+id/metric_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#203F32" android:textSize="15sp" android:fontFamily="sans-serif-medium"/>
+        <TextView android:id="@+id/metric_target" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#5D7165" android:textSize="12sp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="end" android:orientation="vertical">
+        <TextView android:id="@+id/metric_readout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="22sp" android:textStyle="bold" android:letterSpacing="-.04" android:textColor="#153D2F"/>
+        <TextView android:id="@+id/metric_severity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="7dp" android:paddingVertical="2dp" android:textSize="11sp" android:fontFamily="sans-serif-medium"/>
+    </LinearLayout>
+</LinearLayout>

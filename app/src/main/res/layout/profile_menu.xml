@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:padding="6dp" android:orientation="vertical" android:background="@drawable/card">
+    <Button android:id="@+id/manage_pens" style="@style/ProfileMenuItem"
+        android:drawableStart="@drawable/ic_pens" android:text="Pen Management"/>
+    <Button android:id="@+id/manage_users" style="@style/ProfileMenuItem"
+        android:drawableStart="@drawable/ic_users" android:text="Users"/>
+    <Button android:id="@+id/manage_devices" style="@style/ProfileMenuItem"
+        android:drawableStart="@drawable/ic_devices" android:text="Device Management"/>
+    <Button android:id="@+id/open_settings" style="@style/ProfileMenuItem"
+        android:drawableStart="@drawable/ic_settings" android:text="Settings"/>
+</LinearLayout>

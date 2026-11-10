@@ -1,0 +1,22 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:padding="16dp" android:orientation="vertical" android:background="@drawable/card">
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Storage &amp; quality" android:textSize="20sp" android:textColor="#294B37" android:textStyle="bold" android:layout_marginBottom="6dp"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Demo gateway storage · 320 GB of 500 GB (64%)" android:textSize="14sp" android:textColor="#294B37" />
+<ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginVertical="8dp" android:progress="64" android:max="100" android:progressTint="#205A40"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Oldest footage is overwritten when storage is full." android:textSize="13sp" android:textColor="#294B37" />
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Stream and recording quality" android:textSize="13sp" android:textColor="#294B37" android:layout_marginTop="12dp" android:labelFor="@+id/stream_quality"/>
+<Spinner android:id="@+id/stream_quality" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Storage retention limit" android:textSize="13sp" android:textColor="#294B37" android:layout_marginTop="12dp" android:labelFor="@+id/retention"/>
+<Spinner android:id="@+id/retention" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp"/>
+</LinearLayout>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:padding="16dp" android:orientation="vertical" android:background="@drawable/card">
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Recording rules" android:textSize="20sp" android:textColor="#294B37" android:textStyle="bold" android:layout_marginBottom="6dp"/>
+<Switch android:id="@+id/continuous" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp" android:text="Continuous recording" android:textStyle="bold" android:textColor="#213E30" android:switchPadding="10dp"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Record camera feeds around the clock." android:textSize="13sp" android:textColor="#294B37" />
+<Switch android:id="@+id/event_recording" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp" android:text="Event-triggered recording" android:textStyle="bold" android:textColor="#213E30" android:switchPadding="10dp"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Capture motion and alert events." android:textSize="13sp" android:textColor="#294B37" />
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Routine snapshots" android:textSize="13sp" android:textColor="#294B37" android:layout_marginTop="12dp" android:labelFor="@+id/camera_snapshot"/>
+<Spinner android:id="@+id/camera_snapshot" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp"/>
+<Button android:id="@+id/save_cameras" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:minHeight="48dp" android:background="@drawable/action_primary" android:stateListAnimator="@null" android:textAllCaps="false" android:textColor="#FFFFFF" android:text="Save camera settings"/>
+</LinearLayout>
+</merge>

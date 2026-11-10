@@ -1,0 +1,6 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:layout_marginTop="9dp" android:layout_marginBottom="5dp">
+    <EditText android:id="@+id/pen_query" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+        android:minHeight="48dp" android:background="@drawable/card" android:paddingStart="12dp" android:paddingEnd="6dp" android:hint="Search pens" android:singleLine="true" android:imeOptions="actionSearch" android:textSize="14sp"/>
+    <Button android:id="@+id/status_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48dp"
+        android:layout_marginStart="6dp" android:paddingStart="10dp" android:paddingEnd="10dp" android:background="@drawable/action_surface" android:stateListAnimator="@null" android:textAllCaps="false" android:textColor="#205B3F" android:textSize="13sp"/>
+</LinearLayout>

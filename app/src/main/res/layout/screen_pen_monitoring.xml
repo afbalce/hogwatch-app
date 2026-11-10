@@ -1,0 +1,17 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout android:id="@+id/pen_details" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/card" android:layout_marginTop="12dp" android:padding="16dp">
+<Spinner android:id="@+id/monitor_pen" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:contentDescription="Select pen"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:textSize="13sp" android:textColor="#193C2D" android:id="@+id/sample_age"/>
+<LinearLayout android:id="@+id/pen_metrics" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:textSize="14sp" android:textColor="#193C2D" android:id="@+id/sensor_footer" android:paddingTop="10dp"/>
+</LinearLayout>
+<LinearLayout android:id="@+id/pen_alerts" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/card" android:layout_marginTop="12dp" android:padding="16dp">
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Active alerts" android:textSize="20sp" android:textColor="#193C2D" android:id="@+id/pen_alert_count" android:textStyle="bold"/><LinearLayout android:id="@+id/monitor_alert_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+</LinearLayout>
+<LinearLayout android:id="@+id/temperature_trend" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/card" android:layout_marginTop="12dp" android:padding="16dp">
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Temperature trend" android:textSize="20sp" android:textColor="#193C2D" android:id="@+id/trend_heading" android:textStyle="bold"/><LinearLayout android:id="@+id/trend_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+</LinearLayout>
+<LinearLayout android:id="@+id/camera_feed" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/card" android:layout_marginTop="12dp" android:padding="16dp">
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Camera feed" android:textSize="20sp" android:textColor="#193C2D" android:id="@+id/camera_heading" android:textStyle="bold"/><LinearLayout android:id="@+id/camera_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+</LinearLayout>
+</merge>

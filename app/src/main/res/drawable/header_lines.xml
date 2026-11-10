@@ -1,0 +1,13 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="320dp" android:height="120dp" android:viewportWidth="320" android:viewportHeight="120">
+    <path android:pathData="M142,135 C139,97 254,111 224,61 S219,15 274,-10" android:strokeWidth="1" android:strokeColor="#467969" android:fillColor="@android:color/transparent"/>
+    <path android:pathData="M150,135 C147,97 262,111 232,61 S227,15 282,-10" android:strokeWidth="1" android:strokeColor="#467969" android:fillColor="@android:color/transparent"/>
+    <path android:pathData="M158,135 C155,97 270,111 240,61 S235,15 290,-10" android:strokeWidth="1" android:strokeColor="#467969" android:fillColor="@android:color/transparent"/>
+    <path android:pathData="M166,135 C163,97 278,111 248,61 S243,15 298,-10" android:strokeWidth="1" android:strokeColor="#467969" android:fillColor="@android:color/transparent"/>
+    <path android:pathData="M174,135 C171,97 286,111 256,61 S251,15 306,-10" android:strokeWidth="1" android:strokeColor="#467969" android:fillColor="@android:color/transparent"/>
+    <path android:pathData="M182,135 C179,97 294,111 264,61 S259,15 314,-10" android:strokeWidth="1" android:strokeColor="#467969" android:fillColor="@android:color/transparent"/>
+    <path android:pathData="M190,135 C187,97 302,111 272,61 S267,15 322,-10" android:strokeWidth="1" android:strokeColor="#467969" android:fillColor="@android:color/transparent"/>
+    <path android:pathData="M198,135 C195,97 310,111 280,61 S275,15 330,-10" android:strokeWidth="1" android:strokeColor="#467969" android:fillColor="@android:color/transparent"/>
+    <path android:pathData="M206,135 C203,97 318,111 288,61 S283,15 338,-10" android:strokeWidth="1" android:strokeColor="#467969" android:fillColor="@android:color/transparent"/>
+    <path android:pathData="M214,135 C211,97 326,111 296,61 S291,15 346,-10" android:strokeWidth="1" android:strokeColor="#467969" android:fillColor="@android:color/transparent"/>
+    <path android:pathData="M222,135 C219,97 334,111 304,61 S299,15 354,-10" android:strokeWidth="1" android:strokeColor="#467969" android:fillColor="@android:color/transparent"/>
+</vector>

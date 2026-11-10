@@ -1,0 +1,17 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Pen number" android:labelFor="@+id/pen_number" android:textColor="#244333"/>
+        <EditText android:id="@id/pen_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_marginTop="4dp" android:layout_marginBottom="14dp" android:singleLine="true" android:inputType="number" android:maxLength="10" android:hint="" android:background="@drawable/card" android:padding="12dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Display name (optional)" android:labelFor="@+id/pen_alias" android:textColor="#244333"/>
+        <EditText android:id="@id/pen_alias" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_marginTop="4dp" android:layout_marginBottom="14dp" android:singleLine="true" android:inputType="textCapWords" android:maxLength="80" android:hint="e.g. Nursery" android:background="@drawable/card" android:padding="12dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:orientation="vertical" android:padding="12dp" android:background="@drawable/card">
+            <TextView android:id="@+id/sensors_caption" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="16sp" android:textStyle="bold" android:textColor="#193C2D" android:accessibilityLiveRegion="polite"/>
+            <LinearLayout android:id="@+id/sensors_options" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:orientation="vertical" android:padding="12dp" android:background="@drawable/card">
+            <TextView android:id="@+id/cameras_caption" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="16sp" android:textStyle="bold" android:textColor="#193C2D" android:accessibilityLiveRegion="polite"/>
+            <LinearLayout android:id="@+id/cameras_options" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+        </LinearLayout>
+        <Button android:id="@+id/manage_pen_devices" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="Manage devices" android:textAllCaps="false" android:background="@drawable/action_surface"/>
+    </LinearLayout>
+</ScrollView>
