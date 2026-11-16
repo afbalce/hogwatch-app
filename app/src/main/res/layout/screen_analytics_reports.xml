@@ -1,14 +1,18 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/report_tabs"/>
     <LinearLayout
         android:id="@+id/report_parameters"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="10dp"
         android:orientation="vertical"
-        android:background="@drawable/card"
-        android:padding="16dp">
+        android:background="@drawable/gateway_card_surface"
+        android:padding="12dp">
         <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:text="Report parameters" android:textColor="#173929" android:textSize="20sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+            android:text="Farm analytics" android:textColor="#173929" android:textSize="18sp" android:textStyle="bold" android:layout_marginBottom="8dp"/>
     </LinearLayout>
     <LinearLayout android:id="@+id/trend_charts" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
 </merge>
+
+
+

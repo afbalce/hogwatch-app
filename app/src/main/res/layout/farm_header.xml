@@ -1,7 +1,4 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/hero" android:clipToOutline="true">
-<ImageView android:id="@+id/farmArt" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:src="@drawable/farm" android:importantForAccessibility="no"/>
-<ImageView android:id="@+id/header_contours" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/header_lines" android:importantForAccessibility="no"/>
-<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="18dp" android:minHeight="132dp" android:gravity="bottom" android:orientation="vertical" android:id="@+id/header_text">
-<TextView android:id="@+id/farmLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="12sp" android:text="PIGGERY A" android:letterSpacing=".14" android:textStyle="bold" android:textColor="#D4F39C"/>
-<TextView android:id="@+id/screenTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="30sp" android:letterSpacing="-.045" android:layout_marginTop="7dp" android:textStyle="bold" android:textColor="#FFFFFF"/>
-<TextView android:id="@+id/subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="14sp" android:layout_marginTop="8dp" android:textColor="#D8EBDD"/></LinearLayout></FrameLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingTop="16dp" android:paddingBottom="2dp">
+    <TextView android:id="@+id/screenTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="20sp" android:fontFamily="sans-serif-medium" android:textColor="#183A2B"/>
+    <TextView android:id="@+id/subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="13sp" android:textColor="#587062" android:layout_marginTop="4dp"/>
+</LinearLayout>

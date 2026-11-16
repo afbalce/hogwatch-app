@@ -1,0 +1,9 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:padding="14dp" android:orientation="vertical" android:background="@drawable/gateway_card_surface" android:foreground="?android:attr/selectableItemBackground" android:clickable="true" android:focusable="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+        <TextView android:id="@+id/monitor_card_title" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:textSize="18sp" android:textStyle="bold" android:textColor="#183A2B"/>
+        <Button android:id="@+id/monitor_fullscreen" android:layout_width="wrap_content" android:layout_height="48dp" android:text="Full screen" android:textAllCaps="false" android:textSize="12sp" android:textColor="#205B3F" android:background="?android:attr/selectableItemBackground" android:stateListAnimator="@null"/>
+    </LinearLayout>
+    <com.example.hogwatch.PenCameraView android:id="@+id/monitor_preview" android:layout_width="match_parent" android:layout_height="180dp"/>
+    <TextView android:id="@+id/monitor_source" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:textSize="12sp" android:textColor="#657B6E"/>
+    <LinearLayout android:id="@+id/monitor_readings" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="8dp"/>
+</LinearLayout>

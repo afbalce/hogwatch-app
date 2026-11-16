@@ -1,0 +1,9 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginTop="14dp" android:fillViewport="true" android:scrollbars="none"
+    android:overScrollMode="ifContentScrolls" android:background="@drawable/gateway_tab_track"
+    android:clipToOutline="true">
+    <LinearLayout android:id="@+id/report_tab_strip" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:orientation="horizontal"
+        android:gravity="center_vertical" android:baselineAligned="false" android:padding="4dp"/>
+</HorizontalScrollView>

@@ -1,0 +1,8 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginBottom="16dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/gateway_bar_label" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:textSize="13sp" android:textColor="#587062"/>
+        <TextView android:id="@+id/gateway_bar_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="#183A2B" android:textStyle="bold"/>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/gateway_bar" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="7dp" android:layout_marginTop="8dp" android:progressBackgroundTint="#EAF0EC" android:max="1000" android:importantForAccessibility="no"/>
+</LinearLayout>
+

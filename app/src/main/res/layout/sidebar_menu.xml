@@ -1,0 +1,13 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="#F5F7F5">
+<LinearLayout android:id="@+id/sidebar_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:orientation="vertical">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:layout_marginBottom="12dp">
+<TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="HogWatch" android:textSize="21sp" android:textStyle="bold" android:textColor="#163E33"/>
+<Button android:id="@+id/sidebar_close" android:layout_width="48dp" android:layout_height="48dp" android:text="×" android:textSize="26sp" android:textColor="#587062" android:contentDescription="Close menu" android:background="?android:attr/selectableItemBackgroundBorderless"/>
+</LinearLayout>
+<LinearLayout android:id="@+id/sidebar_profile" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="18dp" android:layout_marginBottom="16dp" android:orientation="horizontal" android:gravity="center_vertical" android:background="@drawable/sidebar_item_background" android:clickable="true" android:focusable="true">
+<ImageView android:id="@+id/sidebar_photo" android:layout_width="52dp" android:layout_height="52dp" android:scaleType="centerCrop" android:contentDescription="Profile picture"/>
+<LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginStart="12dp">
+<TextView android:id="@+id/sidebar_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="20sp" android:textStyle="bold" android:textColor="#183A2B"/>
+<TextView android:id="@+id/sidebar_username" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:textSize="13sp" android:textColor="#587062"/>
+</LinearLayout>
+</LinearLayout></LinearLayout></ScrollView>

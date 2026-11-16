@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:padding="18dp" android:orientation="vertical" android:background="@drawable/gateway_card_surface">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+        <TextView android:id="@+id/alert_pen_label" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:textSize="13sp" android:textColor="#587062" android:textStyle="bold"/>
+        <TextView android:id="@+id/alert_severity_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="10dp" android:paddingVertical="5dp" android:textSize="11sp" android:textStyle="bold"/>
+    </LinearLayout>
+    <TextView android:id="@+id/alert_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:textSize="18sp" android:fontFamily="sans-serif-medium" android:textColor="#183A2B"/>
+    <TextView android:id="@+id/alert_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:textSize="13sp" android:textColor="#657B6E"/>
+    <TextView android:id="@+id/alert_workflow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:textSize="12sp" android:textStyle="bold" android:textColor="#287354"/>
+    <TextView android:id="@+id/alert_resolution" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:textSize="12sp" android:textColor="#657B6E" android:visibility="gone"/>
+    <LinearLayout android:id="@+id/alert_actions" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+        <Button android:id="@+id/alert_acknowledge" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:minHeight="48dp" android:paddingHorizontal="6dp" android:text="Acknowledge" android:textSize="13sp" android:textAllCaps="false" android:textColor="#205B3F" android:background="@drawable/action_surface" android:stateListAnimator="@null"/>
+        <Button android:id="@+id/alert_resolve" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_marginStart="10dp" android:text="Resolve" android:textSize="13sp" android:textAllCaps="false" android:textColor="#FFFFFF" android:background="@drawable/action_primary" android:stateListAnimator="@null"/>
+    </LinearLayout>
+</LinearLayout>

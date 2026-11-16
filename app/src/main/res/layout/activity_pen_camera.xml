@@ -1,0 +1,12 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#10281F">
+    <com.example.hogwatch.PenCameraView android:id="@+id/full_camera" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="top" android:gravity="center_vertical" android:paddingHorizontal="16dp" android:paddingVertical="8dp" android:background="#CC10281F">
+        <Button android:id="@+id/camera_close" android:layout_width="48dp" android:layout_height="48dp" android:minWidth="0dp" android:padding="0dp" android:text="‹" android:textSize="30sp" android:textColor="#FFFFFF" android:background="?android:attr/selectableItemBackgroundBorderless" android:contentDescription="Back to monitoring"/>
+        <TextView android:id="@+id/camera_title" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:textColor="#FFFFFF" android:textSize="18sp" android:textStyle="bold"/>
+        <Spinner android:id="@+id/camera_source" android:layout_width="220dp" android:layout_height="48dp" android:background="#EEF4EF" android:contentDescription="Camera source"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="bottom" android:padding="12dp" android:orientation="vertical" android:background="#DD10281F">
+        <TextView android:id="@+id/camera_note" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#CBDDCF" android:textSize="11sp"/>
+        <LinearLayout android:id="@+id/camera_overlay" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingTop="6dp"/>
+    </LinearLayout>
+</FrameLayout>

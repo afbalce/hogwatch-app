@@ -1,0 +1,8 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:tag="action_slider" android:scrollbars="none" android:fadeScrollbars="false"
+    android:scrollbarSize="3dp" android:scrollbarThumbHorizontal="@drawable/shortcut_scroll_thumb"
+    android:paddingBottom="0dp" android:overScrollMode="ifContentScrolls">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:background="@drawable/chip" android:padding="3dp" android:orientation="horizontal" android:gravity="center_vertical"/>
+</HorizontalScrollView>

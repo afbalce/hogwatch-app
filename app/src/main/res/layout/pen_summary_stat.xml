@@ -1,0 +1,10 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent"
+    android:orientation="vertical" android:paddingHorizontal="6dp" android:paddingVertical="16dp"
+    android:gravity="center" android:background="@drawable/pen_stat_surface">
+    <ImageView android:id="@+id/stat_icon" android:layout_width="22dp" android:layout_height="22dp" android:importantForAccessibility="no"/>
+    <TextView android:id="@+id/stat_value" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center" android:textSize="28sp" android:textStyle="bold" android:textColor="#183A2B" android:layout_marginTop="8dp"/>
+    <TextView android:id="@+id/stat_label" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center" android:textSize="12sp" android:textColor="#587062" android:layout_marginTop="3dp"/>
+</LinearLayout>

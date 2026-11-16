@@ -1,0 +1,4 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:orientation="vertical">
+<EditText android:id="@+id/member_search" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Search name or email" android:contentDescription="Search users" android:singleLine="true" android:inputType="text" android:minHeight="48dp" android:padding="12dp" android:textSize="15sp" android:background="@drawable/action_surface"/>
+<Spinner android:id="@+id/member_filter" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="Filter users by role" android:minHeight="48dp"/>
+</LinearLayout>

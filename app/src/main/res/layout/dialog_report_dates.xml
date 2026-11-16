@@ -1,0 +1,11 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+        <TextView style="@style/ProfileLabel" android:text="From date" android:labelFor="@+id/report_from"/>
+        <Button android:id="@+id/report_from" android:layout_width="match_parent" android:layout_height="52dp" android:textAllCaps="false" android:background="@drawable/action_surface"/>
+        <TextView style="@style/ProfileLabel" android:text="To date (inclusive)" android:labelFor="@+id/report_to"/>
+        <Button android:id="@+id/report_to" android:layout_width="match_parent" android:layout_height="52dp" android:textAllCaps="false" android:background="@drawable/action_surface"/>
+        <TextView style="@style/ProfileLabel" android:text="Pens" android:labelFor="@+id/report_pen"/>
+        <Spinner android:id="@+id/report_pen" android:layout_width="match_parent" android:layout_height="52dp"/>
+        <TextView android:id="@+id/report_filter_error" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#AF4936" android:visibility="gone" android:accessibilityLiveRegion="polite"/>
+    </LinearLayout>
+</ScrollView>

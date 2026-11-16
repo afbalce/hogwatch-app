@@ -42,7 +42,7 @@ final class PenCameraDemo {
         });
         snapshot=ui.action(container,"Snapshot",this::snapshot);
         full=ui.action(container,"Full screen",this::fullScreen);
-        ui.action(container,"Manage cameras",()->ui.go(6));
+        ui.action(container,"Manage cameras",()->{ui.go(6);ui.tab=DeviceManagementScreen.CAMERAS;ui.render();});
         source.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
             public void onNothingSelected(AdapterView<?> p){}
             public void onItemSelected(AdapterView<?> p,View v,int i,long id){

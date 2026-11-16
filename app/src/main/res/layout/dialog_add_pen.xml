@@ -1,9 +1,18 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
-    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@drawable/filter_panel">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="20dp" android:gravity="center_vertical">
+        <ImageView android:layout_width="44dp" android:layout_height="44dp" android:padding="10dp" android:src="@drawable/ic_pens" android:background="@drawable/directory_icon_surface" android:importantForAccessibility="no"/>
+        <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:orientation="vertical">
+            <TextView android:id="@+id/pen_editor_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="21sp" android:textStyle="bold" android:textColor="#183A2B"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Details and device assignments" android:textSize="12sp" android:textColor="#657B6E" android:layout_marginTop="3dp"/>
+        </LinearLayout>
+        <Button android:id="@+id/pen_editor_close" android:layout_width="48dp" android:layout_height="48dp" android:minWidth="0dp" android:padding="0dp" android:text="×" android:textSize="24sp" android:textColor="#587062" android:background="?android:attr/selectableItemBackgroundBorderless" android:contentDescription="Close pen editor"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true" android:background="#F6F8F6">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp" android:focusableInTouchMode="true">
         <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Pen number" android:labelFor="@+id/pen_number" android:textColor="#244333"/>
-        <EditText android:id="@id/pen_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_marginTop="4dp" android:layout_marginBottom="14dp" android:singleLine="true" android:inputType="number" android:maxLength="10" android:hint="" android:background="@drawable/card" android:padding="12dp"/>
+        <EditText android:id="@id/pen_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_marginTop="4dp" android:layout_marginBottom="14dp" android:singleLine="true" android:inputType="number" android:maxLength="10" android:hint="" android:background="@drawable/profile_field" android:textSize="16sp" android:textColor="#183A2B" android:padding="14dp"/>
         <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Display name (optional)" android:labelFor="@+id/pen_alias" android:textColor="#244333"/>
-        <EditText android:id="@id/pen_alias" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_marginTop="4dp" android:layout_marginBottom="14dp" android:singleLine="true" android:inputType="textCapWords" android:maxLength="80" android:hint="e.g. Nursery" android:background="@drawable/card" android:padding="12dp"/>
+        <EditText android:id="@id/pen_alias" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_marginTop="4dp" android:layout_marginBottom="14dp" android:singleLine="true" android:inputType="textCapWords" android:maxLength="80" android:hint="e.g. Nursery" android:background="@drawable/profile_field" android:textSize="16sp" android:textColor="#183A2B" android:padding="14dp"/>
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:orientation="vertical" android:padding="12dp" android:background="@drawable/card">
             <TextView android:id="@+id/sensors_caption" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="16sp" android:textStyle="bold" android:textColor="#193C2D" android:accessibilityLiveRegion="polite"/>
             <LinearLayout android:id="@+id/sensors_options" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
@@ -12,6 +21,14 @@
             <TextView android:id="@+id/cameras_caption" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="16sp" android:textStyle="bold" android:textColor="#193C2D" android:accessibilityLiveRegion="polite"/>
             <LinearLayout android:id="@+id/cameras_options" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
         </LinearLayout>
-        <Button android:id="@+id/manage_pen_devices" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="Manage devices" android:textAllCaps="false" android:background="@drawable/action_surface"/>
+        <Button android:id="@+id/manage_pen_devices" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:stateListAnimator="@null" android:textColor="#205B3F" android:text="Manage devices  →" android:textAllCaps="false" android:background="@drawable/action_surface"/>
+        <Button android:id="@+id/delete_pen" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_marginTop="12dp" android:stateListAnimator="@null" android:text="Delete pen" android:textAllCaps="false" android:textColor="#AF4936" android:background="@drawable/pen_delete_surface" android:visibility="gone"/>
     </LinearLayout>
-</ScrollView>
+    </ScrollView>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:orientation="horizontal">
+        <Button android:id="@+id/pen_editor_cancel" android:layout_width="0dp" android:layout_weight="1" android:layout_height="52dp" android:text="Cancel" android:textAllCaps="false" android:textColor="#205B3F" android:background="@drawable/action_surface" android:stateListAnimator="@null"/>
+        <Button android:id="@+id/pen_editor_save" android:layout_width="0dp" android:layout_weight="2" android:layout_height="52dp" android:layout_marginStart="10dp" android:text="Save pen" android:textStyle="bold" android:textAllCaps="false" android:textColor="#FFFFFF" android:background="@drawable/action_primary" android:stateListAnimator="@null"/>
+    </LinearLayout>
+</LinearLayout>
+
+

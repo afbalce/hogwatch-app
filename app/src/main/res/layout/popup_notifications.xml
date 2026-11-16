@@ -1,0 +1,10 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp" android:background="@drawable/gateway_card_surface">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+        <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Notifications" android:textColor="#183A2B" android:textSize="20sp" android:textStyle="bold"/>
+        <Button android:id="@+id/notification_close" android:layout_width="48dp" android:layout_height="48dp" android:minWidth="0dp" android:padding="0dp" android:text="×" android:textSize="24sp" android:contentDescription="Close notifications" android:background="?android:attr/selectableItemBackgroundBorderless"/>
+    </LinearLayout>
+    <TextView android:id="@+id/notification_count" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="13sp" android:textColor="#657B6E" android:layout_marginBottom="10dp"/>
+    <ScrollView android:id="@+id/notification_scroll" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/notification_items" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+    </ScrollView>
+</LinearLayout>

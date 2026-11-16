@@ -1,0 +1,29 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:padding="22dp" android:orientation="vertical" android:background="@drawable/profile_hero">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MY PROFILE" android:textSize="11sp" android:textStyle="bold" android:letterSpacing=".14" android:textColor="#C7DFD1"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:gravity="center_vertical">
+            <ImageView android:id="@+id/profile_photo" android:layout_width="76dp" android:layout_height="76dp" android:scaleType="centerCrop" android:background="@drawable/avatar" android:contentDescription="Change profile picture" android:clickable="true" android:focusable="true"/>
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:orientation="vertical">
+                <TextView android:id="@+id/profile_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="23sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+                <TextView android:id="@+id/profile_handle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:textSize="14sp" android:textColor="#D8E8DE"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Farm Manager" android:textSize="12sp" android:textColor="#BFD9C9"/>
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:id="@+id/change_profile_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_marginTop="18dp" android:paddingHorizontal="18dp" android:text="Change photo" android:textSize="13sp" android:textStyle="bold" android:textAllCaps="false" android:textColor="#205B3F" android:background="@drawable/action_surface" android:stateListAnimator="@null"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:padding="20dp" android:orientation="vertical" android:background="@drawable/card" android:focusableInTouchMode="true">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Personal details" android:textSize="19sp" android:textColor="#183A2B" android:textStyle="bold"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Keep your profile up to date." android:textSize="13sp" android:textColor="#657B6E"/>
+        <TextView style="@style/ProfileLabel" android:text="Full name" android:labelFor="@+id/full_name"/>
+        <EditText style="@style/ProfileField" android:id="@+id/full_name" android:inputType="textCapWords" android:autofillHints="name"/>
+        <TextView style="@style/ProfileLabel" android:text="Username" android:labelFor="@+id/profile_username"/>
+        <EditText style="@style/ProfileField" android:id="@+id/profile_username" android:inputType="textNoSuggestions" android:autofillHints="username"/>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="24dp" android:layout_marginBottom="20dp" android:background="#E8EEE9"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Contact information" android:textSize="16sp" android:textStyle="bold" android:textColor="#183A2B"/>
+        <TextView style="@style/ProfileLabel" android:text="Email address" android:labelFor="@+id/email_address"/>
+        <EditText style="@style/ProfileField" android:id="@+id/email_address" android:inputType="textEmailAddress" android:autofillHints="emailAddress"/>
+        <TextView style="@style/ProfileLabel" android:text="Mobile number" android:labelFor="@+id/mobile_number"/>
+        <EditText style="@style/ProfileField" android:id="@+id/mobile_number" android:inputType="phone" android:autofillHints="phone" android:imeOptions="actionDone"/>
+        <Button android:id="@+id/save_profile" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:minHeight="52dp" android:background="@drawable/action_primary" android:stateListAnimator="@null" android:textAllCaps="false" android:textSize="15sp" android:textStyle="bold" android:textColor="#FFFFFF" android:text="Save changes"/>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <TextView style="@style/ProfileLabel" android:layout_marginTop="0dp" android:layout_marginBottom="4dp" android:textSize="12sp" android:text="Pen number" android:labelFor="@+id/report_inline_pen"/>
+            <EditText android:id="@+id/report_inline_pen" android:layout_width="match_parent" android:layout_height="48dp" android:background="@drawable/profile_field" android:padding="8dp" android:inputType="number" android:singleLine="true" android:hint="All pens" android:textSize="14sp"/>
+        </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:baselineAligned="false">
+        <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginEnd="8dp">
+            <TextView style="@style/ProfileLabel" android:layout_marginTop="0dp" android:layout_marginBottom="4dp" android:textSize="12sp" android:text="From date" android:labelFor="@+id/report_inline_from"/>
+            <Button android:id="@+id/report_inline_from" android:layout_width="match_parent" android:layout_height="48dp" android:background="@drawable/action_surface" android:textAllCaps="false" android:textSize="14sp" android:paddingHorizontal="2dp" android:stateListAnimator="@null"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical">
+            <TextView style="@style/ProfileLabel" android:layout_marginTop="0dp" android:layout_marginBottom="4dp" android:textSize="12sp" android:text="To date" android:labelFor="@+id/report_inline_to"/>
+            <Button android:id="@+id/report_inline_to" android:layout_width="match_parent" android:layout_height="48dp" android:background="@drawable/action_surface" android:textAllCaps="false" android:textSize="14sp" android:paddingHorizontal="2dp" android:stateListAnimator="@null"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@+id/report_inline_error" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#AF4936" android:textSize="12sp" android:layout_marginTop="8dp" android:visibility="gone"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+        <Button android:id="@+id/report_inline_apply" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="Filter" android:textAllCaps="false" android:textColor="#FFFFFF" android:background="@drawable/action_primary" android:stateListAnimator="@null"/>
+        <Button android:id="@+id/report_inline_cancel" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:layout_marginStart="8dp" android:text="Cancel" android:textAllCaps="false" android:textColor="#205B3F" android:background="@drawable/action_surface" android:stateListAnimator="@null"/>
+    </LinearLayout>
+</LinearLayout>
+
+

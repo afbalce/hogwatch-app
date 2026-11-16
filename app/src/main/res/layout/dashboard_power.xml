@@ -1,0 +1,12 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:padding="14dp" android:orientation="vertical" android:background="@drawable/card">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+        <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Gateway Connections" android:textSize="16sp" android:textStyle="bold" android:textColor="#183A2B"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textSize="10sp" android:textColor="#587062"/>
+    </LinearLayout>
+    <com.example.hogwatch.SolarFlowView android:id="@+id/solar_flow" android:layout_width="match_parent" android:layout_height="148dp"/>
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E2E9E4"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="10dp" android:gravity="center_vertical">
+        <TextView android:id="@+id/sim_summary" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:textSize="11sp" android:textColor="#587062"/>
+        <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:gravity="end" android:text="Network\n↓ 1.2  ↑ 0.3 Mbps" android:textSize="11sp" android:textColor="#587062"/>
+    </LinearLayout>
+</LinearLayout>

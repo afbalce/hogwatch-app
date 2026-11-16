@@ -7,8 +7,8 @@ import android.widget.*;
 import java.util.*;
 
 final class SettingsScreen {
-    private static final String[] SECTIONS={"Account","Security","Alerts","Cameras","Notifications"};
-    private static final int[] PANELS={R.layout.settings_account,R.layout.settings_security,R.layout.settings_alerts,R.layout.settings_cameras,R.layout.settings_notifications};
+    private static final String[] SECTIONS={"Security","Alerts","Recording","Notifications"};
+    private static final int[] PANELS={R.layout.settings_security,R.layout.settings_alerts,R.layout.settings_cameras,R.layout.settings_notifications};
     private static final String[] INTERVALS={"Off","Every 15 minutes","Every 30 minutes","Every hour"};
     private final MainActivity ui;
     private LinearLayout panel;
@@ -16,18 +16,22 @@ final class SettingsScreen {
     SettingsScreen(MainActivity ui){this.ui=ui;}
 
     void show(){
+        ui.tab=Math.max(0,Math.min(ui.tab,SECTIONS.length-1));
         ui.getLayoutInflater().inflate(R.layout.screen_settings,ui.content,true);
         LinearLayout tabs=ui.findViewById(R.id.settings_tabs);
         HorizontalScrollView scroller=ui.findViewById(R.id.settings_scroll);
         for(int i=0;i<SECTIONS.length;i++){
             final int index=i;
             Button item=new Button(ui);
-            item.setText(SECTIONS[i]);item.setAllCaps(false);item.setTextSize(14);
+            item.setText(SECTIONS[i]);item.setAllCaps(false);item.setTextSize(12);
             item.setMinWidth(0);item.setMinimumWidth(0);item.setMinHeight(ui.dp(48));
-            item.setPadding(ui.dp(14),0,ui.dp(14),0);item.setStateListAnimator(null);
+            item.setPadding(ui.dp(4),0,ui.dp(4),0);item.setStateListAnimator(null);
             item.setSelected(ui.tab==i);item.setTextColor(item.isSelected()?Color.WHITE:MainActivity.GREEN);
             if(item.isSelected())item.setBackgroundResource(R.drawable.action_primary);else item.setBackgroundColor(Color.TRANSPARENT);
-            tabs.addView(item);
+            SegmentStyle.apply(ui,item,ui.tab==i,false);
+            item.setSingleLine(false);item.setMaxLines(2);item.setHorizontallyScrolling(false);
+            item.setTextSize(12);item.setPadding(ui.dp(4),0,ui.dp(4),0);
+            tabs.addView(item,new LinearLayout.LayoutParams(0,ui.dp(56),i==3?1.4f:1f));
             item.setOnClickListener(v->{if(ui.tab!=index){ui.tab=index;ui.render();}});
             if(item.isSelected())scroller.post(()->scroller.scrollTo(item.getLeft()-(scroller.getWidth()-item.getWidth())/2,0));
         }
@@ -35,31 +39,16 @@ final class SettingsScreen {
         panel.setFocusableInTouchMode(true);
         ui.getLayoutInflater().inflate(PANELS[ui.tab],panel,true);
         switch(ui.tab){
-            case 0:account();break;
-            case 1:security();break;
-            case 2:alerts();break;
-            case 3:cameras();break;
-            case 4:notifications();break;
+            
+            case 0:security();break;
+            case 1:alerts();break;
+            case 2:cameras();break;
+            case 3:notifications();break;
         }
     }
 
     private <T extends View> T view(int id){return panel.findViewById(id);}
     private void saved(){Toast.makeText(ui,"Settings saved on this device",Toast.LENGTH_SHORT).show();}
-
-    private void account(){
-        EditText name=view(R.id.full_name),email=view(R.id.email_address),phone=view(R.id.mobile_number);
-        name.setText(ui.pref("name","John Doe"));email.setText(ui.pref("email","john.doe@hogwatch.com"));phone.setText(ui.pref("phone","+1 (555) 123-4567"));
-        ((TextView)view(R.id.profile_name)).setText(name.getText());
-        ((TextView)view(R.id.profile_initials)).setText(((TextView)ui.findViewById(R.id.account)).getText());
-        view(R.id.save_profile).setOnClickListener(v->{
-            String n=name.getText().toString().trim(), e=email.getText().toString().trim(), p=phone.getText().toString().trim();
-            if(n.isEmpty()){name.setError("Enter your name");return;}
-            if(!android.util.Patterns.EMAIL_ADDRESS.matcher(e).matches()){email.setError("Enter a valid email address");return;}
-            if(!android.util.Patterns.PHONE.matcher(p).matches()){phone.setError("Enter a valid phone number");return;}
-            ui.prefs.edit().putString("name",n).putString("email",e).putString("phone",p).apply();
-            saved();ui.render();
-        });
-    }
 
     private void security(){
         // The demo has no authenticated session or remote account provider.
@@ -122,3 +111,4 @@ final class SettingsScreen {
         }
     }
 }
+

@@ -1,0 +1,6 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:baselineAligned="false" android:padding="4dp" android:background="@drawable/gateway_tab_track">
+    <Button android:id="@+id/gateway_tab_overview" style="@style/GatewayTab" android:text="Overview"/>
+    <Button android:id="@+id/gateway_tab_power" style="@style/GatewayTab" android:text="Solar &amp;\nBattery"/>
+    <Button android:id="@+id/gateway_tab_network" style="@style/GatewayTab" android:text="Network"/>
+    <Button android:id="@+id/gateway_tab_sms" style="@style/GatewayTab" android:text="SMS"/>
+</LinearLayout>

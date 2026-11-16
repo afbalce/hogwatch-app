@@ -1,0 +1,4 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@+id/monitor_search" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp" android:layout_marginTop="14dp" android:padding="14dp" android:background="@drawable/pen_search_surface" android:hint="Search pens or cameras" android:contentDescription="Search pens or cameras" android:singleLine="true" android:imeOptions="actionSearch" android:textSize="14sp"/>
+    <LinearLayout android:id="@+id/monitor_cards" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+</merge>
